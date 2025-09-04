@@ -6,15 +6,19 @@ const DEFAULT_PALETTE_MODE = "dark";
 const LOCAL_STORAGE_KEY = "PaletteModeV1";
 
 function getValidPaletteModeFromLocalStorage(): TPaletteMode {
-  const paletteMode = localStorage.getItem(LOCAL_STORAGE_KEY);
-  if (paletteMode === "light" || paletteMode === "dark") {
-    return paletteMode;
+  if (typeof window !== "undefined") {
+    const paletteMode = localStorage.getItem(LOCAL_STORAGE_KEY);
+    if (paletteMode === "light" || paletteMode === "dark") {
+      return paletteMode;
+    }
   }
   return DEFAULT_PALETTE_MODE;
 }
 
 function setPaletteModeLocalStorage(paletteMode: TPaletteMode) {
-  localStorage.setItem(LOCAL_STORAGE_KEY, paletteMode);
+  if (typeof window !== "undefined") {
+    localStorage.setItem(LOCAL_STORAGE_KEY, paletteMode);
+  }
 }
 
 function usePaletteMode() {
