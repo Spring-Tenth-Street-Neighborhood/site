@@ -115,10 +115,15 @@ const IndexPage: React.FC<PageProps> = () => {
                       Meeting
                     </ExternalLink>
                   </Text>
-                  <Text variant="h3" bold>
-                    Neighborhood Concerns:
-                  </Text>
                   <Text>
+                    <Text variant="h3" bold component="span" display="block">
+                      Neighborhood Concerns
+                    </Text>
+                    The neighborhood around 3335 Spring Street are very
+                    concerned regarding the proposed halfway house.
+                    <ExternalLink to="https://chng.it/SYb2wGrqZC">
+                      Petition with at least 123 signatures
+                    </ExternalLink>
                     <ul>
                       <li>
                         <ExternalLink to="https://county-taxes.net/ca-sanmateo/services/property-tax/c2FubWF0ZW8tY2E6Z3NneF9wcm9wZXJ0eV90YXg6cGFyZW50czoxMzM5MjRmYi1kNzE2LTExZWMtOTZjMy0wMDUwNTZhNDQzNDc=/bills/a0539f7f-3888-11ef-be3b-005056a4afdb#parcel">
