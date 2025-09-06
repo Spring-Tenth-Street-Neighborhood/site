@@ -11,7 +11,7 @@ const SECONDARY_COLORS = {
 };
 const TYPOGRAPHY_HEADLINE_COLORS = {
   light: "#0086e6",
-  dark: "#e9bc7dff", // Lighter brown for contrast
+  dark: "#ff9500", // Lighter brown for contrast
 };
 const BRIGHTEST_GRAY = "#f0f0f0";
 const BACKGROUND_GRAY = "#e0e0e0";
@@ -55,7 +55,7 @@ function getTheme(paletteMode: TPaletteMode) {
     },
     palette: {
       primary: {
-        main: modeIsLight ? PRIMARY_COLOR : "#7ba5d6ff",
+        main: modeIsLight ? PRIMARY_COLOR : "#4de0fdff",
       },
       secondary: {
         main: SECONDARY_COLORS[paletteMode],
