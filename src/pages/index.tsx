@@ -21,7 +21,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <Container maxWidth="md">
-        <Stack gap={4} divider={<Divider />}>
+        <Stack gap={2} divider={<Divider />}>
           <Stack gap={2}>
             <Title component="h1">Spring Tenth Neighborhood</Title>
             <Text>
@@ -52,6 +52,13 @@ const IndexPage: React.FC<PageProps> = () => {
                 <Stack gap={1}>
                   <Text variant="h2" bold>
                     3335 Spring Street Halfway house Board Meeting
+                  </Text>
+                  <Text>
+                    Hello neighbors!
+                    <br /> The county government is trying to fast track this
+                    project into our neighborhood without allowing us residents
+                    enough time and information to discuss it. This will affect
+                    our neighborhood for decades.
                   </Text>
                   <CardMedia
                     component="img"
