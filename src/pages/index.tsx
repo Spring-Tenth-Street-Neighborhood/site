@@ -218,11 +218,8 @@ const IndexPage: React.FC<PageProps> = () => {
                 >
                   Board Meeting
                 </ExternalButtonLink>
-                <ExternalButtonLink
-                  component={Link}
-                  to="https://sanmateocounty.legistar.com/MeetingDetail.aspx?ID=1234924&GUID=A5CC7185-D515-4166-9667-B57F0066A392&Options=info|&Search="
-                >
-                  Board Meeting
+                <ExternalButtonLink to="https://chng.it/SYb2wGrqZC">
+                  Sign the Petition
                 </ExternalButtonLink>
                 <ExternalButtonLink
                   variant="contained"
