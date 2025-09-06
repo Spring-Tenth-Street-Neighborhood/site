@@ -63,14 +63,10 @@ const IndexPage: React.FC<PageProps> = () => {
                     stay informed about this important issue.
                   </Text>
                   <Text>
-                    <Span
-                      alignContent={"center"}
-                      display="inline-flex"
-                      gap={0.5}
-                    >
-                      <InfoIcon /> The last meeting required less than 30
-                      minutes of time, and we were able to provide 1 minute of
-                      public comment.
+                    <Span alignContent={"center"} display="inline-flex" gap={1}>
+                      <InfoIcon color="primary" /> The last meeting required
+                      less than 30 minutes of time, and we were able to provide
+                      1 minute of public comment.
                     </Span>
                   </Text>
                   <Text>
