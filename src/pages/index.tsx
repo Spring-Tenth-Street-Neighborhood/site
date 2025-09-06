@@ -105,7 +105,14 @@ const IndexPage: React.FC<PageProps> = () => {
                         Approximately $80,000 in loss of interest per year.
                         (modest 4% return)
                       </li>
-                      <li>Yearly costs for supervisory services.</li>
+                      <li>Yearly costs for supervisory 24 hour services.</li>
+                      <li>
+                        Yearly costs for maintenance and repair.{" "}
+                        <ExternalLink to="https://www.smcgov.org/ceo/repairs-transitional-housing-service-league-san-mateo-county">
+                          Prior example at 3787, 3787 Hoover Street and 1143
+                          Marsh Road
+                        </ExternalLink>
+                      </li>
                       <li>
                         Plans to place 12 residents in a single-family home.
                         <ul>
