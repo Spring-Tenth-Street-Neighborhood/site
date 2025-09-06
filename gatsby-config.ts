@@ -8,7 +8,7 @@ const config: GatsbyConfig = {
   pathPrefix: `/site`,
   siteMetadata: {
     title: `Spring Tenth Neighborhood`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://spring-tenth-street-neighborhood.github.io/site/`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin

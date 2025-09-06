@@ -6,6 +6,7 @@ import "@fontsource/roboto/700.css";
 import { Box } from "@mui/material";
 import { MuiThemeProvider } from "./Theme/MuiThemeProvider";
 import { PaletteModeProvider } from "./Theme/paletteModeContext";
+import { LanguageProvider } from "./Language/context";
 
 interface LayoutProps {
   children: ReactNode;
@@ -14,20 +15,16 @@ interface LayoutProps {
 export function Layout(props: LayoutProps) {
   const { children } = props;
   return (
-    <PaletteModeProvider>
-      <main>
-        <MuiThemeProvider>
-          <Box
-            sx={{
-              height: "100vh",
-              paddingY: 2,
-              overflowY: "auto",
-            }}
-          >
-            {children}
-          </Box>
-        </MuiThemeProvider>
-      </main>
-    </PaletteModeProvider>
+    <main>
+      <Box
+        sx={{
+          height: "100vh",
+          paddingY: 2,
+          overflowY: "auto",
+        }}
+      >
+        {children}
+      </Box>
+    </main>
   );
 }
