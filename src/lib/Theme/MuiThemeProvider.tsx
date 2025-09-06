@@ -55,7 +55,7 @@ function getTheme(paletteMode: TPaletteMode) {
     },
     palette: {
       primary: {
-        main: PRIMARY_COLOR,
+        main: modeIsLight ? PRIMARY_COLOR : "#7ba5d6ff",
       },
       secondary: {
         main: SECONDARY_COLORS[paletteMode],
@@ -82,13 +82,6 @@ function getTheme(paletteMode: TPaletteMode) {
             fontWeight: "bold",
             fontSize: "0.875rem",
             lineHeight: "1.25rem",
-          },
-          outlined: {
-            color: modeIsLight ? PRIMARY_COLOR : BRIGHTEST_GRAY,
-            backgroundColor: modeIsLight ? "transparent" : "#3c220f", // subtle brown overlay
-          },
-          text: {
-            color: modeIsLight ? PRIMARY_COLOR : BRIGHTEST_GRAY,
           },
         },
       },
