@@ -47,7 +47,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <Card>
               <CardContent>
                 <Stack gap={1}>
-                  <Text variant="h3" bold>
+                  <Text variant="h2" bold>
                     3335 Spring Street Halfway house Board Meeting
                   </Text>
                   <CardMedia
@@ -72,12 +72,31 @@ const IndexPage: React.FC<PageProps> = () => {
                           <ExternalLink to="https://smcgov.zoom.us/j/97944675398">
                             Zoom
                           </ExternalLink>
-                          . Simply raise your hand.
+                          .
                         </Span>
+                        <Span>Simply raise your hand.</Span>
                       </Stack>
                     </Span>
                   </Text>
-                  <Text variant="h4" bold>
+                  <Text variant="h3" bold>
+                    When & Where
+                  </Text>
+                  <Text>
+                    Date: <strong>Tuesday, September 9, 2025 at 9 AM</strong>
+                  </Text>
+                  <Text>
+                    Zoom Link:{" "}
+                    <ExternalLink to="https://smcgov.zoom.us/j/97944675398">
+                      https://smcgov.zoom.us/j/97944675398
+                    </ExternalLink>
+                  </Text>
+                  <Text>
+                    Location:{" "}
+                    <strong>
+                      500 County Center Chambers, 1st Fl. Redwood City, CA
+                    </strong>
+                  </Text>{" "}
+                  <Text variant="h3" bold>
                     Meeting Details
                   </Text>
                   <Text>
@@ -88,12 +107,18 @@ const IndexPage: React.FC<PageProps> = () => {
                     of our tax payer dollars to purchase and renovate the
                     property at 3335 Spring Street into a halfway house for up
                     to 12 residents.{" "}
+                    <ExternalLink to="https://www.smcgov.org/ceo/south-county-youth-housing">
+                      Proposal
+                    </ExternalLink>
+                    {""}
                     <ExternalLink to="https://sanmateocounty.legistar.com/LegislationDetail.aspx?ID=7649069&GUID=3A3209C8-010C-4963-BB4B-FA9DB0D34D96&Options=&Search=">
-                      View Proposal
+                      Meeting
                     </ExternalLink>
                   </Text>
+                  <Text variant="h3" bold>
+                    Neighborhood Concerns:
+                  </Text>
                   <Text>
-                    <strong>Neighborhood Concerns:</strong>
                     <ul>
                       <li>
                         <ExternalLink to="https://county-taxes.net/ca-sanmateo/services/property-tax/c2FubWF0ZW8tY2E6Z3NneF9wcm9wZXJ0eV90YXg6cGFyZW50czoxMzM5MjRmYi1kNzE2LTExZWMtOTZjMy0wMDUwNTZhNDQzNDc=/bills/a0539f7f-3888-11ef-be3b-005056a4afdb#parcel">
@@ -178,24 +203,6 @@ const IndexPage: React.FC<PageProps> = () => {
                       <li>Safety and security for local residents.</li>
                       <li>Impact on property values in the neighborhood.</li>
                     </ul>
-                  </Text>
-                  <Text variant="h4" bold>
-                    When & Where
-                  </Text>
-                  <Text>
-                    Date: <strong>Tuesday, September 9, 2025 at 9 AM</strong>
-                  </Text>
-                  <Text>
-                    Zoom Link:{" "}
-                    <ExternalLink to="https://smcgov.zoom.us/j/97944675398">
-                      https://smcgov.zoom.us/j/97944675398
-                    </ExternalLink>
-                  </Text>
-                  <Text>
-                    Location:{" "}
-                    <strong>
-                      500 County Center Chambers, 1st Fl. Redwood City, CA
-                    </strong>
                   </Text>
                 </Stack>
               </CardContent>
