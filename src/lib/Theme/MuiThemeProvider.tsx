@@ -90,7 +90,7 @@ function getTheme(paletteMode: TPaletteMode) {
       },
       MuiLink: {
         defaultProps: {
-          underline: "hover",
+          underline: "always",
         },
         styleOverrides: {
           root: {
@@ -103,15 +103,6 @@ function getTheme(paletteMode: TPaletteMode) {
           root: {
             backgroundColor: TYPOGRAPHY_HEADLINE_COLORS[paletteMode],
             borderColor: "rgba(255, 255, 255, 0)",
-          },
-        },
-      },
-      MuiTypography: {
-        styleOverrides: {
-          root: {
-            "& a": {
-              textDecoration: "underline",
-            },
           },
         },
       },

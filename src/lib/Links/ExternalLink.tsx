@@ -19,7 +19,7 @@ export const ExternalLink = forwardRef<HTMLAnchorElement, ExternalLinkProps>(
         target="_blank"
         rel="noopener"
         sx={mergeSxProps(
-          { display: "inline-flex", alignItems: "center", gap: 0.5 },
+          { display: "inline-flex", alignItems: "center", gap: 0.25 },
           otherProps.sx
         )}
       >

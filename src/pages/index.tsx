@@ -12,7 +12,7 @@ import {
   Stack,
 } from "@mui/material";
 import { Text } from "../lib/Typography/Text";
-import { ExternalButtonLink, ExternalLink, InternalLink } from "../lib/Links";
+import { ExternalLink, InternalLink } from "../lib/Links";
 import Spring3335FrontImage from "../images/spring-3335-front-33.jpg";
 import { Span } from "../lib/Span";
 import { Spring3335Links } from "../Content/Spring3335/Links";
@@ -112,11 +112,14 @@ const IndexPage: React.FC<PageProps> = () => {
                     to 12 residents.{" "}
                     <ExternalLink to="https://www.smcgov.org/ceo/south-county-youth-housing">
                       Proposal
-                    </ExternalLink>
-                    {""}
+                    </ExternalLink>{" "}
                     <ExternalLink to="https://sanmateocounty.legistar.com/LegislationDetail.aspx?ID=7649069&GUID=3A3209C8-010C-4963-BB4B-FA9DB0D34D96&Options=&Search=">
                       Meeting
-                    </ExternalLink>
+                    </ExternalLink>{" "}
+                    <InternalLink to="/spring-st-3335"> Flyer</InternalLink>
+                  </Text>
+                  <Text>
+                    <strong>Purpose:</strong> Provide transitional housing for
                   </Text>
                   <Text>
                     <Text variant="h3" bold component="span" display="block">
@@ -213,6 +216,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     </ul>
                   </Text>
                 </Stack>
+                <Divider />
               </CardContent>
               <CardActions>
                 <Spring3335Links />
