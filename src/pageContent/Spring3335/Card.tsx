@@ -61,18 +61,6 @@ const ContentByLanguage = {
     theNeighborhoodAround:
       "The neighborhood around 3335 Spring Street are very concerned regarding the proposed halfway house.",
     petitionLink: "Petition with at least 123 signatures",
-    lossOfPropertyTax:
-      "Loss of $22,602.12 in annual property tax revenue for the county and our neighborhood.",
-    approximatelyLoss:
-      "Approximately $80,000 in loss of interest per year. (modest 4% return)",
-    yearlyCostsSupervisory: "Yearly costs for supervisory 24 hour services.",
-    yearlyCostsMaintenance: "Yearly costs for maintenance and repair.",
-    priorExampleAt:
-      "Prior example at 3787, 3787 Hoover Street and 1143 Marsh Road",
-    plansToPlace: "Plans to place 12 residents in a single-family home.",
-    initialProposal:
-      'Initial proposal: "begin with no more than six residents at a time during the initial six months of operation".',
-    messagingIndicated: "Messaging indicated 12 men and women over time.",
   },
   es: {
     title: "Reunión de la Junta de 3335 Spring Street Casa de Medio Camino",
@@ -116,20 +104,6 @@ const ContentByLanguage = {
     theNeighborhoodAround:
       "El vecindario alrededor de 3335 Spring Street está muy preocupado por la propuesta de una casa de medio camino.",
     petitionLink: "Petición con al menos 123 firmas",
-    lossOfPropertyTax:
-      "Pérdida de $22,602.12 en ingresos anuales por impuestos a la propiedad para el condado y nuestro vecindario.",
-    approximatelyLoss:
-      "Aproximadamente $80,000 en pérdida de intereses por año. (modesto retorno del 4%)",
-    yearlyCostsSupervisory:
-      "Costos anuales por servicios de supervisión las 24 horas.",
-    yearlyCostsMaintenance: "Costos anuales de mantenimiento y reparación.",
-    priorExampleAt:
-      "Ejemplo previo en 3787, 3787 Hoover Street y 1143 Marsh Road",
-    plansToPlace:
-      "Planes para colocar a 12 residentes en una casa unifamiliar.",
-    initialProposal:
-      'Propuesta inicial: "comenzar con no más de seis residentes a la vez durante los primeros seis meses de operación".',
-    messagingIndicated: "El mensaje indicó 12 hombres y mujeres con el tiempo.",
   },
 };
 

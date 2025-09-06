@@ -131,10 +131,14 @@ export function Spring3335CardListItems() {
       <li>{content.approximatelyLoss}</li>
       <li>{content.yearlyCostsSupervisory}</li>
       <li>
-        {content.yearlyCostsSupervisory}{" "}
-        <ExternalLink to="https://www.smcgov.org/ceo/repairs-transitional-housing-service-league-san-mateo-county">
-          {content.priorExampleAt}
-        </ExternalLink>
+        {content.yearlyCostsMaintenance}{" "}
+        <ul>
+          <li>
+            <ExternalLink to="https://www.smcgov.org/ceo/repairs-transitional-housing-service-league-san-mateo-county">
+              {content.priorExampleAt}
+            </ExternalLink>
+          </li>
+        </ul>
       </li>
       <li>
         {content.plansToPlace}
