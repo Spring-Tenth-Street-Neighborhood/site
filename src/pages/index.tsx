@@ -9,13 +9,13 @@ import {
   CardMedia,
   Container,
   Divider,
-  Link,
   Stack,
 } from "@mui/material";
 import { Text } from "../lib/Typography/Text";
 import { ExternalButtonLink, ExternalLink, InternalLink } from "../lib/Links";
 import Spring3335FrontImage from "../images/spring-3335-front-33.jpg";
 import { Span } from "../lib/Span";
+import { Spring3335Links } from "../Content/Spring3335/Links";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -43,6 +43,9 @@ const IndexPage: React.FC<PageProps> = () => {
               We urge the Redwood City Council to carefully consider the
               potential consequences of this proposal and to prioritize the
               well-being of our neighborhood residents.
+            </Text>
+            <Text>
+              <Spring3335Links />
             </Text>
             <Card>
               <CardContent>
@@ -212,21 +215,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 </Stack>
               </CardContent>
               <CardActions>
-                <ExternalButtonLink
-                  component={Link}
-                  to="https://sanmateocounty.legistar.com/MeetingDetail.aspx?ID=1234924&GUID=A5CC7185-D515-4166-9667-B57F0066A392&Options=info|&Search="
-                >
-                  Board Meeting
-                </ExternalButtonLink>
-                <ExternalButtonLink to="https://chng.it/SYb2wGrqZC">
-                  Sign the Petition
-                </ExternalButtonLink>
-                <ExternalButtonLink
-                  variant="contained"
-                  to="https://smcgov.zoom.us/j/97944675398"
-                >
-                  Zoom Meeting
-                </ExternalButtonLink>
+                <Spring3335Links />
               </CardActions>
             </Card>
           </Stack>
