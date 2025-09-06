@@ -1,6 +1,11 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  /**
+   * The site is hosted in a subdirectory, https://spring-tenth-street-neighborhood.github.io/site/
+   * We need to set the pathPrefix to /site
+   */
+  pathPrefix: `/site`,
   siteMetadata: {
     title: `Spring Tenth Neighborhood`,
     siteUrl: `https://www.yourdomain.tld`,
