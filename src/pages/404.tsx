@@ -8,7 +8,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
     <Layout>
       <Container maxWidth="md">
         <Stack gap={2}>
-          <Title variant="h1" component="h1" bold>
+          <Title variant="h1" component="h1">
             Page not found
           </Title>
           <Button variant="contained" component={Link} to="/">
