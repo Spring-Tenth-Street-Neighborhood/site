@@ -1,7 +1,7 @@
 import { Link, PageProps } from "gatsby";
 import { Layout } from "../lib/Layout";
 import { Title } from "../lib/Typography/Title";
-import { Container, Stack } from "@mui/material";
+import { Button, Container, Stack } from "@mui/material";
 
 const NotFoundPage: React.FC<PageProps> = () => {
   return (
@@ -11,7 +11,9 @@ const NotFoundPage: React.FC<PageProps> = () => {
           <Title variant="h1" component="h1" bold>
             Page not found
           </Title>
-          <Link to="/">Go home</Link>
+          <Button variant="contained" component={Link} to="/">
+            Go home
+          </Button>
         </Stack>
       </Container>
     </Layout>
