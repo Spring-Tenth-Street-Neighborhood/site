@@ -10,7 +10,7 @@ export interface TitleProps
 
 export const Title = forwardRef(
   (props: TitleProps, ref: ForwardedRef<HTMLHeadingElement>) => {
-    const { variant, sx, color, component, ...rest } = props;
+    const { variant, component, ...rest } = props;
     return (
       <Typography
         {...rest}

@@ -10,7 +10,7 @@ export interface TextProps
 
 export const Text = forwardRef(
   (props: TextProps, ref: ForwardedRef<HTMLParagraphElement>) => {
-    const { variant = "body1", bold, sx, color, component, ...rest } = props;
+    const { variant = "body1", bold, sx, component, ...rest } = props;
     return (
       <Typography
         {...rest}

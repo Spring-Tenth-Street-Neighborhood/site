@@ -1,4 +1,5 @@
-import { Link as GatsbyLink, type PageProps } from "gatsby";
+import InfoIcon from "@mui/icons-material/Info";
+import { type PageProps } from "gatsby";
 import { Layout } from "../lib/Layout";
 import { Title } from "../lib/Typography/Title";
 import {
@@ -14,6 +15,7 @@ import {
 import { Text } from "../lib/Typography/Text";
 import { ExternalLink, InternalLink } from "../lib/Links";
 import Spring3335FrontImage from "../images/spring-3335-front-33.jpg";
+import { Span } from "../lib/Span";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -45,18 +47,46 @@ const IndexPage: React.FC<PageProps> = () => {
             <Card>
               <CardContent>
                 <Stack gap={1}>
+                  <Text variant="h3" bold>
+                    3335 Spring Street Halfway house Board Meeting
+                  </Text>
                   <CardMedia
                     component="img"
                     src={Spring3335FrontImage}
                     alt="3335 Spring Street Halfway House"
                   />
-                  <Text variant="h3" bold>
-                    3335 Spring Street Halfway house Board Meeting
+                  <Text>
+                    <Text component="span" color="textSecondary" bold>
+                      Action Needed:
+                    </Text>{" "}
+                    Attend the upcoming board meeting to voice your concerns and
+                    stay informed about this important issue.
                   </Text>
                   <Text>
-                    <strong>Action Needed:</strong> Attend the upcoming board
-                    meeting to voice your concerns and stay informed about this
-                    important issue.
+                    <Span
+                      alignContent={"center"}
+                      display="inline-flex"
+                      gap={0.5}
+                    >
+                      <InfoIcon /> The last meeting required less than 30
+                      minutes of time, and we were able to provide 1 minute of
+                      public comment.
+                    </Span>
+                  </Text>
+                  <Text>
+                    Date: <strong>Tuesday, September 9, 2025 at 9 AM</strong>
+                  </Text>
+                  <Text>
+                    Zoom Link:{" "}
+                    <ExternalLink to="https://smcgov.zoom.us/j/97944675398">
+                      https://smcgov.zoom.us/j/97944675398
+                    </ExternalLink>
+                  </Text>
+                  <Text>
+                    Location:{" "}
+                    <strong>
+                      500 County Center Chambers, 1st Fl. Redwood City, CA
+                    </strong>
                   </Text>
                 </Stack>
               </CardContent>
@@ -68,7 +98,7 @@ const IndexPage: React.FC<PageProps> = () => {
                   Board Meeting
                 </ExternalLink>
                 <ExternalLink
-                  component={Link}
+                  variant="contained"
                   to="https://smcgov.zoom.us/j/97944675398"
                 >
                   Zoom Meeting
