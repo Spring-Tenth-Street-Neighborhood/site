@@ -91,7 +91,7 @@ function getTheme(paletteMode: TPaletteMode) {
         },
         styleOverrides: {
           root: {
-            color: modeIsLight ? "#0068b3" : "#c7a16b", // brown accent
+            fontWeight: "bold",
           },
         },
       },

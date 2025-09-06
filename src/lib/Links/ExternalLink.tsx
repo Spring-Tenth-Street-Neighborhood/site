@@ -1,34 +1,20 @@
-import { Button, ButtonProps, Link } from "@mui/material";
+import { LinkProps, Link } from "@mui/material";
 import { forwardRef } from "react";
 
 import { OpenInNewTabIcon } from "../Icons/OpenInNewTabIcon";
 
-interface ExternalLinkProps extends Omit<ButtonProps, "href"> {
-  openInNewTabIsVisible?: boolean;
+interface ExternalLinkProps extends Omit<LinkProps, "href"> {
   to: string;
 }
 
 export const ExternalLink = forwardRef<HTMLAnchorElement, ExternalLinkProps>(
   function ForwardRefExternalLink(props, ref) {
-    const { children, openInNewTabIsVisible, to, ...otherProps } = props;
+    const { children, to, ...otherProps } = props;
     return (
-      <Button
-        ref={ref}
-        component={Link}
-        {...otherProps}
-        href={to}
-        target="_blank"
-        rel="noopener"
-      >
+      <Link ref={ref} {...otherProps} href={to} target="_blank" rel="noopener">
         {children}
-        {openInNewTabIsVisible && (
-          <OpenInNewTabIcon sx={{ marginLeft: 0.5, verticalAlign: "middle" }} />
-        )}
-      </Button>
+        <OpenInNewTabIcon sx={{ marginLeft: 0.5, verticalAlign: "middle" }} />
+      </Link>
     );
   }
 );
-
-ExternalLink.defaultProps = {
-  openInNewTabIsVisible: true,
-};

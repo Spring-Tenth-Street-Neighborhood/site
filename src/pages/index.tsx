@@ -13,7 +13,7 @@ import {
   Stack,
 } from "@mui/material";
 import { Text } from "../lib/Typography/Text";
-import { ExternalLink, InternalLink } from "../lib/Links";
+import { ExternalButtonLink, ExternalLink, InternalLink } from "../lib/Links";
 import Spring3335FrontImage from "../images/spring-3335-front-33.jpg";
 import { Span } from "../lib/Span";
 
@@ -87,18 +87,18 @@ const IndexPage: React.FC<PageProps> = () => {
                 </Stack>
               </CardContent>
               <CardActions>
-                <ExternalLink
+                <ExternalButtonLink
                   component={Link}
                   to="https://sanmateocounty.legistar.com/MeetingDetail.aspx?ID=1234924&GUID=A5CC7185-D515-4166-9667-B57F0066A392&Options=info|&Search="
                 >
                   Board Meeting
-                </ExternalLink>
-                <ExternalLink
+                </ExternalButtonLink>
+                <ExternalButtonLink
                   variant="contained"
                   to="https://smcgov.zoom.us/j/97944675398"
                 >
                   Zoom Meeting
-                </ExternalLink>
+                </ExternalButtonLink>
               </CardActions>
             </Card>
             <Card>
