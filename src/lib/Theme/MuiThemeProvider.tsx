@@ -4,7 +4,7 @@ import { ReactNode, useMemo } from "react";
 
 import { usePaletteModeContext } from "./paletteModeContext";
 
-const PRIMARY_COLOR = "#512f01"; // Deep brown
+const PRIMARY_COLOR = "#0095ffff"; // Deep brown
 const SECONDARY_COLORS = {
   light: "#0086e6",
   dark: "#3d2812ff", // Rich brown accent
@@ -26,7 +26,7 @@ function getTheme(paletteMode: TPaletteMode) {
   const theme = createTheme({
     typography: {
       allVariants: {
-        color: modeIsLight ? PRIMARY_COLOR : BRIGHTEST_GRAY,
+        color: modeIsLight ? DARKEST_GRAY : BRIGHTEST_GRAY,
       },
       h1: {
         fontSize: "2rem",
@@ -61,7 +61,7 @@ function getTheme(paletteMode: TPaletteMode) {
         main: SECONDARY_COLORS[paletteMode],
       },
       warning: {
-        main: "#fcb149ff",
+        main: modeIsLight ? "#eb8900ff" : "#fcb149ff",
       },
       error: {
         main: "#f00",

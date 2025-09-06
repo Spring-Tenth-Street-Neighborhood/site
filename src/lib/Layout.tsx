@@ -7,6 +7,7 @@ import { Box } from "@mui/material";
 import { MuiThemeProvider } from "./Theme/MuiThemeProvider";
 import { PaletteModeProvider } from "./Theme/paletteModeContext";
 import { LanguageProvider } from "./Language/context";
+import { SiteAppBar } from "./AppBar";
 
 interface LayoutProps {
   children: ReactNode;
@@ -15,16 +16,25 @@ interface LayoutProps {
 export function Layout(props: LayoutProps) {
   const { children } = props;
   return (
-    <main>
+    <Box
+      component="main"
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+        bgcolor: (theme) => theme.palette.background.default,
+      }}
+    >
+      <SiteAppBar />
       <Box
         sx={{
-          height: "100vh",
+          flexGrow: 1,
           paddingY: 2,
           overflowY: "auto",
         }}
       >
         {children}
       </Box>
-    </main>
+    </Box>
   );
 }
