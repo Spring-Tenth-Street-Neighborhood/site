@@ -81,9 +81,13 @@ const IndexPage: React.FC<PageProps> = () => {
                     Meeting Details
                   </Text>
                   <Text>
-                    <strong>Board Proposal:</strong> Spend $2 million of our tax
-                    payer dollars to purchase and renovate the property at 3335
-                    Spring Street into a halfway house for up to 12 residents.{" "}
+                    <strong>Board Proposal:</strong> Spend{" "}
+                    <Text component="span" color="warning" bold>
+                      $2 million
+                    </Text>{" "}
+                    of our tax payer dollars to purchase and renovate the
+                    property at 3335 Spring Street into a halfway house for up
+                    to 12 residents.{" "}
                     <ExternalLink to="https://sanmateocounty.legistar.com/LegislationDetail.aspx?ID=7649069&GUID=3A3209C8-010C-4963-BB4B-FA9DB0D34D96&Options=&Search=">
                       View Proposal
                     </ExternalLink>
@@ -102,6 +106,67 @@ const IndexPage: React.FC<PageProps> = () => {
                         (modest 4% return)
                       </li>
                       <li>Yearly costs for supervisory services.</li>
+                      <li>
+                        Plans to place 12 residents in a single-family home.
+                        <ul>
+                          <li>
+                            Initial proposal: "begin with no more than six
+                            residents at a time during the initial six months of
+                            operation".
+                          </li>
+                          <li>
+                            Messaging indicated 12 men and women over time.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        Precedence:{" "}
+                        <ExternalLink to="https://serviceleague.org/get-help/transitional-housing.html#:~:text=We%20operate%20five%2C%20six%2Dbed%20homes%20(2%20for%20women*%20and%203%20for%20men)%20in%20residential%20settings%C2%A0throughout%20Redwood%20City.">
+                          Service League of San Mateo
+                        </ExternalLink>
+                        <ul>
+                          <li>
+                            "operate five, six-bed homes{" "}
+                            <Text component="span" color="warning" bold>
+                              (2 for women* and 3 for men)
+                            </Text>{" "}
+                            in residential settings throughout Redwood City."
+                          </li>
+                          <li>
+                            In other words, up to{" "}
+                            <Text component="span" color="warning" bold>
+                              18
+                            </Text>{" "}
+                            people could be housed at once.
+                          </li>
+                          <li>
+                            Our neighborhood is not equipped to handle 12-18
+                            residents, or their associated traffic, sewage
+                            service, parking, and other infrastructure needs.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        Legal recourse:
+                        <ul>
+                          <li>
+                            Residential neighborhoods can challenge the
+                            placement of such facilities through local zoning
+                            laws and regulations.
+                          </li>
+                          <li>
+                            Legal Precedence:{" "}
+                            <ExternalLink to="https://supreme.justia.com/cases/federal/us/416/1/">
+                              https://supreme.justia.com/cases/federal/us/416/1/
+                            </ExternalLink>
+                          </li>
+                          <li>
+                            The U.S. Supreme Court allowed the legislature to
+                            draw distinctions that limit the number of unrelated
+                            people who can constitute a family.
+                          </li>
+                        </ul>
+                      </li>
                       <li>Increase in traffic and noise in the area.</li>
                       <li>Safety and security for local residents.</li>
                       <li>Impact on property values in the neighborhood.</li>

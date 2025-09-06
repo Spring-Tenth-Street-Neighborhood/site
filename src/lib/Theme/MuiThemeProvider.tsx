@@ -60,6 +60,9 @@ function getTheme(paletteMode: TPaletteMode) {
       secondary: {
         main: SECONDARY_COLORS[paletteMode],
       },
+      warning: {
+        main: "#fcb149ff",
+      },
       error: {
         main: "#f00",
       },
