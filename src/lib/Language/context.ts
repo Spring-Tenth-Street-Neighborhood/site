@@ -1,9 +1,12 @@
 import constate from "constate";
 import { useState } from "react";
+import { browserLocalStorage } from "../browserStorage";
 
 type Language = "en" | "es";
 const LOCAL_STORAGE_KEY = "preferred-language";
-const defaultPreferredLanguage = localStorage.getItem(LOCAL_STORAGE_KEY) as any;
+const defaultPreferredLanguage = browserLocalStorage?.getItem(
+  LOCAL_STORAGE_KEY
+) as any;
 const preferredLanguage = navigator.language?.startsWith("es") ? "es" : "en";
 
 function useLanguage() {
@@ -14,7 +17,7 @@ function useLanguage() {
   );
 
   const setLanguageAndStore = (lang: Language) => {
-    localStorage.setItem(LOCAL_STORAGE_KEY, lang);
+    browserLocalStorage?.setItem(LOCAL_STORAGE_KEY, lang);
     setLanguage(lang);
   };
   return {

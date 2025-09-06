@@ -1,13 +1,14 @@
 import constate from "constate";
 import { SetStateAction, useCallback, useState } from "react";
+import { browserLocalStorage } from "../browserStorage";
 
 type TPaletteMode = "light" | "dark";
 const DEFAULT_PALETTE_MODE = "dark";
 const LOCAL_STORAGE_KEY = "PaletteModeV1";
 
 function getValidPaletteModeFromLocalStorage(): TPaletteMode {
-  if (typeof window !== "undefined") {
-    const paletteMode = localStorage.getItem(LOCAL_STORAGE_KEY);
+  if (browserLocalStorage) {
+    const paletteMode = browserLocalStorage?.getItem(LOCAL_STORAGE_KEY);
     if (paletteMode === "light" || paletteMode === "dark") {
       return paletteMode;
     }
@@ -16,8 +17,8 @@ function getValidPaletteModeFromLocalStorage(): TPaletteMode {
 }
 
 function setPaletteModeLocalStorage(paletteMode: TPaletteMode) {
-  if (typeof window !== "undefined") {
-    localStorage.setItem(LOCAL_STORAGE_KEY, paletteMode);
+  if (browserLocalStorage) {
+    browserLocalStorage.setItem(LOCAL_STORAGE_KEY, paletteMode);
   }
 }
 
