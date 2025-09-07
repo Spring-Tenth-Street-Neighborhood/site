@@ -20,12 +20,12 @@ const LIGHT_MODE_COLOR = "#cc0";
 
 const ContentByLanguage = {
   en: {
-    title: "Spring Tenth Neighborhood",
-    lettersToTheBoard: "Letters to the Board",
+    title: "Neighborhood",
+    lettersToTheBoard: "Letters",
   },
   es: {
-    title: "Vecindario de Spring Tenth",
-    lettersToTheBoard: "Cartas a la Junta",
+    title: "Vecindario",
+    lettersToTheBoard: "Cartas",
   },
 };
 

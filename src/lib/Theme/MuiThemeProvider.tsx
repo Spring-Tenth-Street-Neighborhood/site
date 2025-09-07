@@ -25,9 +25,6 @@ function getTheme(paletteMode: TPaletteMode) {
   const modeIsLight = paletteMode === "light";
   const theme = createTheme({
     typography: {
-      allVariants: {
-        color: modeIsLight ? DARKEST_GRAY : BRIGHTEST_GRAY,
-      },
       h1: {
         fontSize: "2rem",
         fontWeight: "bold",
@@ -59,6 +56,11 @@ function getTheme(paletteMode: TPaletteMode) {
       },
       secondary: {
         main: SECONDARY_COLORS[paletteMode],
+      },
+      info: {
+        light: modeIsLight ? "#3399ffff" : "#101b25ff",
+        main: modeIsLight ? PRIMARY_COLOR : "#4de0fdff",
+        dark: modeIsLight ? "#66b2ffff" : "#001933ff",
       },
       warning: {
         main: modeIsLight ? "#eb8900ff" : "#fcb149ff",
