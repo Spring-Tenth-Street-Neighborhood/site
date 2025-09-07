@@ -4,20 +4,20 @@ import { browserLocalStorage } from "../browserStorage";
 
 type Language = "en" | "es";
 const LOCAL_STORAGE_KEY = "preferred-language";
-const defaultPreferredLanguage = browserLocalStorage?.getItem(
+const potentialDefaultLanguage = browserLocalStorage?.getItem(
   LOCAL_STORAGE_KEY
 ) as any;
+const defaultPreferredLanguage = potentialDefaultLanguage ?? "en";
 const preferredLanguage =
-  typeof window !== "undefined" && navigator.language?.startsWith("es")
+  typeof window !== "undefined" && navigator?.language?.startsWith("es")
     ? "es"
     : "en";
 
 function useLanguage() {
-  const [language, setLanguage] = useState<Language>(
-    () =>
-      (["en", "es"].includes(defaultPreferredLanguage)
-        ? defaultPreferredLanguage
-        : preferredLanguage) ?? "en"
+  const [language, setLanguage] = useState<Language>(() =>
+    ["en", "es"].includes(defaultPreferredLanguage)
+      ? defaultPreferredLanguage
+      : preferredLanguage
   );
 
   const setLanguageAndStore = (lang: Language) => {
@@ -25,7 +25,7 @@ function useLanguage() {
     setLanguage(lang);
   };
   return {
-    language,
+    language: language ?? "en",
     setLanguage: setLanguageAndStore,
   };
 }

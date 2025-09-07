@@ -95,6 +95,7 @@
   },
   "include": [
     "gatsby-browser.tsx",
+    "gatsby-ssr.tsx",
     "./src/**/*",
     "./gatsby-node.ts",
     "./gatsby-config.ts",
