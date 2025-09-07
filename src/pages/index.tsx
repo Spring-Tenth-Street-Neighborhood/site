@@ -97,6 +97,9 @@ export function Head() {
     <>
       <title>Spring Tenth Neighborhood</title>
       <meta name="description" content="Spring Tenth Neighborhood" />
+      <meta name="theme-color" content="#170d06ff" />
+      <meta name="msapplication-TileColor" content="#170d06ff" />
+      <style>{`body { background-color: #170d06ff; }`}</style>
     </>
   );
 }

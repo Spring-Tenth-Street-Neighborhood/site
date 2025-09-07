@@ -7,7 +7,10 @@ const LOCAL_STORAGE_KEY = "preferred-language";
 const defaultPreferredLanguage = browserLocalStorage?.getItem(
   LOCAL_STORAGE_KEY
 ) as any;
-const preferredLanguage = navigator.language?.startsWith("es") ? "es" : "en";
+const preferredLanguage =
+  typeof window !== "undefined" && navigator.language?.startsWith("es")
+    ? "es"
+    : "en";
 
 function useLanguage() {
   const [language, setLanguage] = useState<Language>(() =>

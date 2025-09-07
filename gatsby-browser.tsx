@@ -1,3 +1,4 @@
+import "./gatsbyGlobal.css";
 import { ReactNode } from "react";
 import { LanguageProvider } from "./src/lib/Language/context";
 import { MuiThemeProvider } from "./src/lib/Theme/MuiThemeProvider";
