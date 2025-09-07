@@ -45,28 +45,26 @@ export default function BlogPage(props: any) {
         <Stack gap={2}>
           <Title component="h1">{content.title}</Title>
           <Text>{content.description}</Text>
-          <Text>
-            <ul>
-              <li>
-                {content.emailTheBoard}{" "}
-                <ExternalLink to="mailto:BoardFeedback@smcgov.org?subject=Feedback%20on%203335%20Spring%20St%20Proposal">
-                  BoardFeedback@smcgov.org
-                </ExternalLink>
-              </li>
-              <li>
-                {content.emailUs}{" "}
-                <ExternalLink to="mailto:northfairoaksneighbors@gmail.com">
-                  northfairoaksneighbors@gmail.com
-                </ExternalLink>{" "}
-              </li>
-              <li>
-                {content.sendFeedback}{" "}
-                <ExternalLink to="https://form.typeform.com/to/PqjalTyv">
-                  {content.survey}
-                </ExternalLink>
-              </li>
-            </ul>
-          </Text>
+          <ul>
+            <li>
+              {content.emailTheBoard}{" "}
+              <ExternalLink to="mailto:BoardFeedback@smcgov.org?subject=Feedback%20on%203335%20Spring%20St%20Proposal">
+                BoardFeedback@smcgov.org
+              </ExternalLink>
+            </li>
+            <li>
+              {content.emailUs}{" "}
+              <ExternalLink to="mailto:northfairoaksneighbors@gmail.com">
+                northfairoaksneighbors@gmail.com
+              </ExternalLink>{" "}
+            </li>
+            <li>
+              {content.sendFeedback}{" "}
+              <ExternalLink to="https://form.typeform.com/to/PqjalTyv">
+                {content.survey}
+              </ExternalLink>
+            </li>
+          </ul>
           <Title component="h2">{content.lettersFrom}</Title>
           <Text>{content.weAre}</Text>
           <List>
@@ -90,7 +88,7 @@ export default function BlogPage(props: any) {
                     </InternalLink>
                   }
                   secondary={
-                    <Text color="textPrimary" variant="body2">
+                    <Text component="span" color="textPrimary" variant="body2">
                       {node.excerpt}
                     </Text>
                   }
