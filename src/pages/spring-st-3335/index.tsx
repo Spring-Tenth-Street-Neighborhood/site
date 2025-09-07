@@ -54,7 +54,7 @@ export default function Spring3335HalfwayHouseFlyer() {
   return (
     <Layout>
       <Container maxWidth="md">
-        <Stack gap={4} divider={<Divider />}>
+        <Stack gap={2} divider={<Divider />}>
           <Stack gap={2}>
             <Title component="h1">{content.title}</Title>
             <Text>{content.description}</Text>
