@@ -173,6 +173,7 @@ export function Spring3335Card() {
               {content.flyerLink}
             </InternalLink>
           </Text>
+          <Divider />
           <Text variant="h3" bold component="span" display="block">
             {content.neighborhoodConcerns}
           </Text>

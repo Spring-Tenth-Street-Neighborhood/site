@@ -17,9 +17,13 @@ import Spring3335FrontImage from "../../images/spring-3335-front-33.jpg";
 import { Span } from "../../lib/Span";
 import { Spring3335Links } from "./Links";
 import { useLanguageContext } from "../../lib/Language/context";
+import LetterToTheBoard from "../../pages/spring-st-3335/letterToTheBoard";
 
 const ContentByLanguage = {
   en: {
+    LetterToTheBoard: "Letter to the Board of Supervisors",
+    fromAConcernedResident:
+      "from a concerned resident and voter in Redwood City",
     lossOfPropertyTax:
       "Loss of $22,602.12 in annual property tax revenue for the county and our neighborhood.",
     approximatelyLoss:
@@ -67,6 +71,9 @@ const ContentByLanguage = {
     impactPropertyValues: "Impact on property values in the neighborhood.",
   },
   es: {
+    LetterToTheBoard: "Carta a la Junta de Supervisores",
+    fromAConcernedResident:
+      "de un residente y votante preocupado en Redwood City",
     lossOfPropertyTax:
       "Pérdida de $22,602.12 en ingresos anuales por impuestos a la propiedad para el condado y nuestro vecindario.",
     approximatelyLoss:
@@ -123,6 +130,12 @@ export function Spring3335CardListItems() {
   const content = ContentByLanguage[language];
   return (
     <ul>
+      <li>
+        {content.LetterToTheBoard}:{" "}
+        <InternalLink to="/spring-st-3335/letterToTheBoard/">
+          {content.fromAConcernedResident}
+        </InternalLink>
+      </li>
       <li>
         <ExternalLink to="https://county-taxes.net/ca-sanmateo/services/property-tax/c2FubWF0ZW8tY2E6Z3NneF9wcm9wZXJ0eV90YXg6cGFyZW50czoxMzM5MjRmYi1kNzE2LTExZWMtOTZjMy0wMDUwNTZhNDQzNDc=/bills/a0539f7f-3888-11ef-be3b-005056a4afdb#parcel">
           {content.lossOfPropertyTax}
