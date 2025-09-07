@@ -60,7 +60,7 @@ const ContentByLanguage = {
     neighborhoodConcerns: "Neighborhood Concerns",
     theNeighborhoodAround:
       "The neighborhood around 3335 Spring Street are very concerned regarding the proposed halfway house.",
-    petitionLink: "Petition with at least 123 signatures",
+    petitionLink: "Petition with at least 134 signatures",
   },
   es: {
     title: "Reunión de la Junta de 3335 Spring Street Casa de Medio Camino",
@@ -103,7 +103,7 @@ const ContentByLanguage = {
     neighborhoodConcerns: "Preocupaciones del Vecindario",
     theNeighborhoodAround:
       "El vecindario alrededor de 3335 Spring Street está muy preocupado por la propuesta de una casa de medio camino.",
-    petitionLink: "Petición con al menos 123 firmas",
+    petitionLink: "Petición con al menos 134 firmas",
   },
 };
 
