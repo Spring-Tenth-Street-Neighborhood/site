@@ -1,4 +1,9 @@
 import type { GatsbyConfig } from "gatsby";
+// import { dirname } from "path";
+// import { fileURLToPath } from "url";
+
+const __dirname = ".";
+// const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const config: GatsbyConfig = {
   /**
@@ -54,17 +59,26 @@ const config: GatsbyConfig = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: `${__dirname}/src/images/`,
       },
       __key: "images",
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
       },
       __key: "pages",
+    },
+    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `lettersToTheBoard`,
+        path: `${__dirname}/src/spring-st-3335/lettersToTheBoard`,
+      },
+      __key: "lettersToTheBoard",
     },
   ],
 };

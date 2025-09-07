@@ -79,9 +79,13 @@ const IndexPage: React.FC<PageProps> = () => {
           <Stack gap={2}>
             <Title component="h2">{content.agenda}</Title>
             {content.summary}
-            <Text>
+            <Stack
+              direction={{ xs: "column", sm: "row" }}
+              alignItems="center"
+              gap={1}
+            >
               <Spring3335Links />
-            </Text>
+            </Stack>
             <Spring3335Card />
           </Stack>
         </Stack>

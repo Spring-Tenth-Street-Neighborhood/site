@@ -5,6 +5,7 @@ import {
   Button,
   Container,
   IconButton,
+  Stack,
   Toolbar,
   Tooltip,
 } from "@mui/material";
@@ -17,18 +18,59 @@ import { useLanguageContext } from "./Language/context";
 const DARK_MODE_COLOR = "#aaa";
 const LIGHT_MODE_COLOR = "#cc0";
 
+const ContentByLanguage = {
+  en: {
+    title: "Spring Tenth Neighborhood",
+    lettersToTheBoard: "Letters to the Board",
+  },
+  es: {
+    title: "Vecindario de Spring Tenth",
+    lettersToTheBoard: "Cartas a la Junta",
+  },
+};
+
+const activeLinkStyle = {
+  textDecoration: "underline",
+  backgroundColor: "rgba(255, 255, 255, 0.1)",
+  padding: "20px 8px",
+};
+
 export function SiteAppBar() {
   const { paletteModeIsDark, togglePaletteMode } = usePaletteModeContext();
   const { language, setLanguage } = useLanguageContext();
   const PaletteModeIcon = paletteModeIsDark ? DarkModeIcon : LightModeIcon;
+  const content = ContentByLanguage[language];
 
   return (
-    <AppBar position="sticky" color="secondary">
+    <AppBar position="sticky" color="secondary" variant="elevation">
       <Container maxWidth="md">
         <Toolbar disableGutters>
-          <InternalLink to="/" color="inherit" underline="none">
-            Spring Tenth Neighborhood
-          </InternalLink>
+          <Stack
+            direction="row"
+            alignItems="center"
+            spacing={{
+              xs: 1,
+              sm: 2,
+            }}
+          >
+            <InternalLink
+              to="/"
+              color="inherit"
+              underline="none"
+              activeStyle={activeLinkStyle}
+            >
+              {content.title}
+            </InternalLink>
+            <InternalLink
+              to="/spring-st-3335/lettersToTheBoard"
+              color="inherit"
+              underline="none"
+              activeStyle={activeLinkStyle}
+              partiallyActive
+            >
+              {content.lettersToTheBoard}
+            </InternalLink>
+          </Stack>
           <Box flexGrow={1} />
           <Box display="flex" gap={0.5} alignItems="center">
             <Tooltip

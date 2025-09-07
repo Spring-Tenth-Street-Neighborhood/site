@@ -26,6 +26,12 @@ export function Spring3335Links() {
         {content.signPetition}
       </ExternalButtonLink>
       <ExternalButtonLink
+        to="mailto:BoardFeedback@smcgov.org?subject=Feedback%20on%203335%20Spring%20St%20Proposal"
+        variant="contained"
+      >
+        Email BoardFeedback@smcgov.org
+      </ExternalButtonLink>
+      <ExternalButtonLink
         variant="contained"
         to="https://smcgov.zoom.us/j/97944675398"
       >

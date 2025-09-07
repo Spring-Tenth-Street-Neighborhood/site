@@ -187,7 +187,12 @@ export function Spring3335Card() {
         </Stack>
         <Divider />
       </CardContent>
-      <CardActions>
+      <CardActions
+        sx={{
+          flexDirection: { xs: "column", sm: "row" },
+          gap: 1,
+        }}
+      >
         <Spring3335Links />
       </CardActions>
     </Card>
