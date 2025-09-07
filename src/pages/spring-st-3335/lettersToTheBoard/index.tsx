@@ -21,7 +21,7 @@ export default function BlogPage(props: any) {
           <Text>
             <ul>
               <li>
-                You can email your letter to the board{" "}
+                You can email your letter to the board, even if you did before{" "}
                 <ExternalLink to="mailto:BoardFeedback@smcgov.org?subject=Feedback%20on%203335%20Spring%20St%20Proposal">
                   BoardFeedback@smcgov.or
                 </ExternalLink>
