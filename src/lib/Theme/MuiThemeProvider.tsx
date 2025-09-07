@@ -80,6 +80,22 @@ function getTheme(paletteMode: TPaletteMode) {
       },
     },
     components: {
+      MuiCssBaseline: {
+        styleOverrides: {
+          h1: {
+            color: TYPOGRAPHY_HEADLINE_COLORS[paletteMode],
+          },
+          h2: {
+            color: TYPOGRAPHY_HEADLINE_COLORS[paletteMode],
+          },
+          h3: {
+            color: TYPOGRAPHY_HEADLINE_COLORS[paletteMode],
+          },
+          h4: {
+            color: TYPOGRAPHY_HEADLINE_COLORS[paletteMode],
+          },
+        },
+      },
       MuiButton: {
         styleOverrides: {
           root: {
