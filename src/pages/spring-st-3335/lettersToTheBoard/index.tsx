@@ -50,7 +50,7 @@ export default function BlogPage(props: any) {
               <li>
                 {content.emailTheBoard}{" "}
                 <ExternalLink to="mailto:BoardFeedback@smcgov.org?subject=Feedback%20on%203335%20Spring%20St%20Proposal">
-                  BoardFeedback@smcgov.or
+                  BoardFeedback@smcgov.org
                 </ExternalLink>
               </li>
               <li>
