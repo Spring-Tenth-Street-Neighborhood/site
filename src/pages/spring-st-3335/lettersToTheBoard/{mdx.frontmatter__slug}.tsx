@@ -1,8 +1,20 @@
-import { graphql } from "gatsby";
+import { graphql, PageProps } from "gatsby";
 import { Layout } from "../../../lib/Layout";
 import { Container, Divider, Stack } from "@mui/material";
 import { Title } from "../../../lib/Typography/Title";
 import { Text } from "../../../lib/Typography/Text";
+import { Seo } from "../../../lib/Seo/Seo";
+
+// interface QueryReturn {
+//   mdx: {
+//     frontmatter: {
+//       title: string;
+//       date: string;
+//       author: string;
+//     };
+//     body: string;
+//   };
+// }
 
 // @ts-expect-error
 const BlogPost = ({ data, children }) => {
@@ -25,17 +37,20 @@ const BlogPost = ({ data, children }) => {
   );
 };
 
-export function Head() {
+// @ts-expect-error
+export const Head = ({ data, children }) => {
+  const { title } = data.mdx.frontmatter;
+  const { excerpt } = data.mdx;
   return (
-    <>
-      <title>3335 Spring St | Letters to the board</title>
-      <meta
-        name="description"
-        content="Letters to the board at 3335 Spring St"
-      />
-    </>
+    <Seo
+      title={title || "Letter to the board"}
+      description={excerpt || "Letters to the board at 3335 Spring St"}
+    >
+      {children}
+    </Seo>
   );
-}
+};
+
 export const query = graphql`
   query MyQuery($id: String) {
     mdx(id: { eq: $id }) {
@@ -44,6 +59,7 @@ export const query = graphql`
         date(formatString: "MMMM D, YYYY")
         author
       }
+      excerpt(pruneLength: 160)
     }
   }
 `;

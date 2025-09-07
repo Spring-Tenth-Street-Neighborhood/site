@@ -19,6 +19,7 @@ import {
   InternalLink,
 } from "../../lib/Links";
 import { useLanguageContext } from "../../lib/Language/context";
+import { Seo } from "../../lib/Seo/Seo";
 const ContentByLanguage = {
   en: {
     title: "3335 Spring Street Halfway House Proposal",
@@ -103,12 +104,9 @@ export default function Spring3335HalfwayHouseFlyer() {
 
 export function Head() {
   return (
-    <>
-      <title>3335 Spring Street Halfway House Proposal</title>
-      <meta
-        name="description"
-        content="3335 Spring Street Halfway House Proposal"
-      />
-    </>
+    <Seo
+      title="3335 Spring Street Halfway House Letters"
+      description="Letters regarding the 3335 Spring Street Halfway House proposal"
+    />
   );
 }

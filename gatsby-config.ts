@@ -13,7 +13,9 @@ const config: GatsbyConfig = {
   pathPrefix: `/site`,
   siteMetadata: {
     title: `Spring Tenth Neighborhood`,
+    description: `A site to organize the neighborhood against the 3335 Spring St halfway house proposal`,
     siteUrl: `https://spring-tenth-street-neighborhood.github.io/site/`,
+    image: `/icon.png`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
