@@ -13,10 +13,11 @@ const preferredLanguage =
     : "en";
 
 function useLanguage() {
-  const [language, setLanguage] = useState<Language>(() =>
-    ["en", "es"].includes(defaultPreferredLanguage)
-      ? defaultPreferredLanguage
-      : preferredLanguage ?? "en"
+  const [language, setLanguage] = useState<Language>(
+    () =>
+      (["en", "es"].includes(defaultPreferredLanguage)
+        ? defaultPreferredLanguage
+        : preferredLanguage) ?? "en"
   );
 
   const setLanguageAndStore = (lang: Language) => {
