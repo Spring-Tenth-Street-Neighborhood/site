@@ -7,7 +7,6 @@ import {
   CardActions,
   CardContent,
   CardMedia,
-  Container,
   Divider,
   Stack,
 } from "@mui/material";
@@ -134,7 +133,7 @@ export function Spring3335Card() {
           <Text>
             <Span alignContent={"center"} display="flex" gap={1}>
               <InfoIcon color="primary" />
-              <Stack display="inline-flex">
+              <Stack display="inline-flex" component="span">
                 {content.info1}
                 <Span>
                   {content.info2}{" "}
@@ -182,8 +181,8 @@ export function Spring3335Card() {
             <ExternalLink to="https://chng.it/SYb2wGrqZC">
               {content.petitionLink}
             </ExternalLink>
-            <Spring3335CardListItems />
           </Text>
+          <Spring3335CardListItems />
         </Stack>
         <Divider />
       </CardContent>
