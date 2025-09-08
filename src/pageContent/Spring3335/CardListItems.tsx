@@ -46,7 +46,7 @@ const ContentByLanguage = {
             infrastructure needs.`,
     precedence2: "Star-Vista - Daybreak 639 Douglas Ave",
     starVistaOperation:
-      "Star Vista was operating a 20+ man and woman facility at 639 Douglas Ave (a 3 bedroom house). It recently shut down due to financial issues.",
+      "Star Vista was operating a 7+ man and woman facility at 639 Douglas Ave (a 3 bedroom house). It recently shut down due to financial issues.",
     douglasAvePropertyValueChanges:
       "Douglas Ave property value and effect on neighbors",
     legalRecourse: "Legal recourse",
@@ -106,7 +106,7 @@ const ContentByLanguage = {
             infraestructura.`,
     precedence2: "Star-Vista - Daybreak 639 Douglas Ave",
     starVistaOperation:
-      "Star Vista estaba operando una instalación de más de 20 hombres y mujeres en 639 Douglas Ave (una casa de 3 habitaciones). Recientemente cerró debido a problemas financieros.",
+      "Star Vista estaba operando una instalación de más de 7+ hombres y mujeres en 639 Douglas Ave (una casa de 3 habitaciones). Recientemente cerró debido a problemas financieros.",
     douglasAvePropertyValueChanges:
       "Cambios en el valor de la propiedad de Douglas Ave y efecto en los vecinos",
     legalRecourse: "Recurso legal",
