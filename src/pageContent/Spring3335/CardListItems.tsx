@@ -10,6 +10,8 @@ const ContentByLanguage = {
       "Loss of $22,602.12 in annual property tax revenue for the county and our neighborhood.",
     approximatelyLoss:
       "Approximately $80,000 in loss of interest per year. (modest 4% return)",
+    initialRepairs:
+      "The house has structural issues, and was expanded without permits.",
     yearlyCostsSupervisory: "Yearly costs for supervisory 24 hour services.",
     yearlyCostsMaintenance: "Yearly costs for maintenance and repair.",
     priorExampleAt:
@@ -59,6 +61,8 @@ const ContentByLanguage = {
       "Pérdida de $22,602.12 en ingresos anuales por impuestos a la propiedad para el condado y nuestro vecindario.",
     approximatelyLoss:
       "Aproximadamente $80,000 en pérdida de intereses por año. (modesto retorno del 4%)",
+    initialRepairs:
+      "La casa tiene problemas estructurales y fue ampliada sin permisos.",
     yearlyCostsSupervisory:
       "Costos anuales por servicios de supervisión las 24 horas.",
     yearlyCostsMaintenance: "Costos anuales de mantenimiento y reparación.",
@@ -123,6 +127,11 @@ export function Spring3335CardListItems() {
         </ExternalLink>
       </li>
       <li>{content.approximatelyLoss}</li>
+      <li>
+        <InternalLink to="/spring-st-3335/structure">
+          {content.initialRepairs}
+        </InternalLink>
+      </li>
       <li>{content.yearlyCostsSupervisory}</li>
       <li>
         {content.yearlyCostsMaintenance}{" "}
