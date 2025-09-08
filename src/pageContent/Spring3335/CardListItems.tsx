@@ -44,6 +44,11 @@ const ContentByLanguage = {
     operation3: `Our neighborhood is not equipped to handle 12-18 residents, or their
             associated traffic, sewage service, parking, and other
             infrastructure needs.`,
+    precedence2: "Star-Vista - Daybreak 639 Douglas Ave",
+    starVistaOperation:
+      "Star Vista was operating a 20+ man and woman facility at 639 Douglas Ave (a 3 bedroom house). It recently shut down due to financial issues.",
+    douglasAvePropertyValueChanges:
+      "Douglas Ave property value and effect on neighbors",
     legalRecourse: "Legal recourse",
     zoningLaws:
       "Residential neighborhoods can challenge the placement of such facilities through local zoning laws and regulations.",
@@ -99,6 +104,11 @@ const ContentByLanguage = {
     operation3: `Nuestro vecindario no está equipado para manejar de 12 a 18 residentes, o sus
             necesidades asociadas de tráfico, servicio de alcantarillado, estacionamiento y otra
             infraestructura.`,
+    precedence2: "Star-Vista - Daybreak 639 Douglas Ave",
+    starVistaOperation:
+      "Star Vista estaba operando una instalación de más de 20 hombres y mujeres en 639 Douglas Ave (una casa de 3 habitaciones). Recientemente cerró debido a problemas financieros.",
+    douglasAvePropertyValueChanges:
+      "Cambios en el valor de la propiedad de Douglas Ave y efecto en los vecinos",
     legalRecourse: "Recurso legal",
     zoningLaws:
       "Los vecindarios residenciales pueden impugnar la colocación de tales instalaciones a través de las leyes y regulaciones de zonificación locales.",
@@ -170,6 +180,20 @@ export function Spring3335CardListItems() {
         </ul>
       </li>
       <li>
+        {content.precedence2}:{" "}
+        <ExternalLink to="https://star-vista.org/daybreak-30">
+          Star Vista - Daybreak 639 Douglas Ave
+        </ExternalLink>
+        <ul>
+          <li>{content.starVistaOperation}</li>
+          <li>
+            <InternalLink to="/spring-st-3335/HouseValue/">
+              {content.douglasAvePropertyValueChanges}
+            </InternalLink>
+          </li>
+        </ul>
+      </li>
+      <li>
         {content.legalRecourse}:
         <ul>
           <li>{content.zoningLaws}</li>
@@ -183,7 +207,11 @@ export function Spring3335CardListItems() {
       </li>
       <li>{content.increaseTraffic}</li>
       <li>{content.safetySecurity}</li>
-      <li>{content.impactPropertyValues}</li>
+      <li>
+        <InternalLink to="/spring-st-3335/HouseValue/">
+          {content.douglasAvePropertyValueChanges}
+        </InternalLink>
+      </li>
     </ul>
   );
 }
