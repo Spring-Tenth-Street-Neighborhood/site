@@ -12,6 +12,7 @@ const ContentByLanguage = {
       "Approximately $80,000 in loss of interest per year. (modest 4% return)",
     initialRepairs:
       "The house has structural issues, and was expanded without permits.",
+    accessibilityParking: "The house has accessibility and parking issues.",
     yearlyCostsSupervisory: "Yearly costs for supervisory 24 hour services.",
     yearlyCostsMaintenance: "Yearly costs for maintenance and repair.",
     priorExampleAt:
@@ -63,6 +64,8 @@ const ContentByLanguage = {
       "Aproximadamente $80,000 en pérdida de intereses por año. (modesto retorno del 4%)",
     initialRepairs:
       "La casa tiene problemas estructurales y fue ampliada sin permisos.",
+    accessibilityParking:
+      "La casa tiene problemas de accesibilidad y estacionamiento.",
     yearlyCostsSupervisory:
       "Costos anuales por servicios de supervisión las 24 horas.",
     yearlyCostsMaintenance: "Costos anuales de mantenimiento y reparación.",
@@ -130,6 +133,11 @@ export function Spring3335CardListItems() {
       <li>
         <InternalLink to="/spring-st-3335/structure">
           {content.initialRepairs}
+        </InternalLink>
+      </li>
+      <li>
+        <InternalLink to="/spring-st-3335/accessibilityParking">
+          {content.accessibilityParking}
         </InternalLink>
       </li>
       <li>{content.yearlyCostsSupervisory}</li>

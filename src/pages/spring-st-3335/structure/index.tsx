@@ -122,7 +122,7 @@ export default function Spring3335StructuralObservations() {
 export function Head() {
   return (
     <Seo
-      title="House Value Analysis"
+      title="House Structural Observations"
       image={Spring3335RoofStructuralZoom1Image}
     />
   );
