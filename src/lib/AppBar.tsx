@@ -35,7 +35,7 @@ const ContentByLanguage = {
 const activeLinkStyle = {
   textDecoration: "underline",
   backgroundColor: "rgba(255, 255, 255, 0.1)",
-  padding: "20px 8px",
+  padding: "16px 8px",
 };
 
 export function SiteAppBar() {
