@@ -1,3 +1,4 @@
+import HomeIcon from "@mui/icons-material/Home";
 import LanguageIcon from "@mui/icons-material/Language";
 import {
   AppBar,
@@ -59,9 +60,9 @@ export function SiteAppBar() {
               to="/"
               color="inherit"
               underline="none"
-              activeStyle={activeLinkStyle}
+              aria-label={content.title}
             >
-              {content.title}
+              <HomeIcon />
             </InternalLink>
             <InternalLink
               to="/spring-st-3335/lettersToTheBoard"
