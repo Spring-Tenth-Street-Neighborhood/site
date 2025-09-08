@@ -20,6 +20,8 @@ const ContentByLanguage = {
       "The claims are that transitional housing has no effect on nearby property values. Let's take a look at the data.",
     caseStudy:
       "The 639 Douglas Avenue transitional housing project in Redwood City is a case study for impact in property values and crime.",
+    onZillow: "On Zillow, we can see the ",
+    propertyValueHistory: "property value history for 639 Douglas Avenue",
     listedOnMarket:
       "It was recently listed on the market on August 8, 2025. Prior to that, its estimate was around $1.4M.Its estimate dropped by approximately $300,000, and is being sold for $1.088M. This is a drop of 27.5%!",
     neighbors646: "Neighbors 646 Douglas Ave",
@@ -38,6 +40,9 @@ const ContentByLanguage = {
       "Las afirmaciones son que la vivienda de transición no tiene efecto en los valores de las propiedades cercanas. Echemos un vistazo a los datos.",
     caseStudy:
       "El proyecto de vivienda de transición en 639 Douglas Avenue en Redwood City es un estudio de caso sobre el impacto en los valores de las propiedades y el crimen.",
+    onZillow: "En Zillow, podemos ver el ",
+    propertyValueHistory:
+      "historial de valor de la propiedad para 639 Douglas Avenue",
     listedOnMarket:
       "Recientemente se puso en el mercado el 8 de agosto de 2025. Antes de eso, su estimación era de alrededor de $1.4M. Su estimación bajó aproximadamente $300,000, y se está vendiendo por $1.088M. ¡Esto es una caída del 27.5%!",
     neighbors646: "Vecinos 646 Douglas Ave",
@@ -66,9 +71,9 @@ export default function HouseValuePage() {
             <Text>{content.claim}</Text>
             <Text>{content.caseStudy}</Text>
             <Text>
-              On Zillow, we can see the{" "}
+              {content.onZillow}
               <ExternalLink to="https://www.zillow.com/homedetails/639-Douglas-Ave-Redwood-City-CA-94063/15567040_zpid/?utm_campaign=zillowwebmessage&utm_medium=referral&utm_source=txtshare">
-                property value history for 639 Douglas Avenue
+                {content.propertyValueHistory}
               </ExternalLink>
               .
             </Text>
