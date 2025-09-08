@@ -22,10 +22,12 @@ const ContentByLanguage = {
   en: {
     title: "Neighborhood",
     lettersToTheBoard: "Letters",
+    houseValue: "House Value",
   },
   es: {
     title: "Vecindario",
     lettersToTheBoard: "Cartas",
+    houseValue: "Valor de la Casa",
   },
 };
 
@@ -69,6 +71,15 @@ export function SiteAppBar() {
               partiallyActive
             >
               {content.lettersToTheBoard}
+            </InternalLink>
+            <InternalLink
+              to="/spring-st-3335/HouseValue/"
+              color="inherit"
+              underline="none"
+              activeStyle={activeLinkStyle}
+              partiallyActive
+            >
+              {content.houseValue}
             </InternalLink>
           </Stack>
           <Box flexGrow={1} />
