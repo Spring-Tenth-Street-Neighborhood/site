@@ -20,7 +20,7 @@ const ContentByLanguage = {
           our community, including increased traffic, noise, and safety
           concerns.`,
     summary2: `
-          We urge the Redwood City Council to carefully consider the potential
+          We urge the San Mateo Board of Supervisors to carefully consider the potential
           consequences of this proposal and to prioritize the well-being of our
           neighborhood residents.`,
     lettersToTheBoard: "Letters to the Board",
@@ -37,9 +37,9 @@ const ContentByLanguage = {
           negativos significativos en nuestra comunidad, incluyendo un aumento
           del tráfico, ruido y preocupaciones de seguridad.
           `,
-    summary2: `  Instamos al Concejo de la Ciudad de Redwood a considerar
-          cuidadosamente las posibles consecuencias de esta propuesta y a
-          priorizar el bienestar de los residentes de nuestro vecindario.
+    summary2: `Instamos al Concejo de la Ciudad de Redwood a considerar
+            cuidadosamente las posibles consecuencias de esta propuesta y a
+            priorizar el bienestar de los residentes de nuestro vecindario.
         `,
     lettersToTheBoard: "Cartas a la Junta",
   },
