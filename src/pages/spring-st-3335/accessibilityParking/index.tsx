@@ -48,7 +48,6 @@ export default function Spring3335AccessibilityParking() {
           <Stack gap={2}>
             <Title component="h2">{content.sidewalkAccessibility}</Title>
             <Stack gap={2}>
-              <Title component="h3">{content.sidewalkAccessibility}</Title>
               <Text>{content.sidewalkAccessibilityText}</Text>
               <Text>{content.parkingText}</Text>
               <Image
