@@ -3,24 +3,24 @@ import { useSiteMetadata } from "./useSiteMetadata";
 interface SeoProps {
   title?: string;
   description?: string;
+  image?: string;
   pathname?: string;
   children?: React.ReactNode;
 }
 
 export function Seo(props: SeoProps) {
-  const { title, description, pathname, children } = props;
+  const { title, description, image, pathname, children } = props;
   const {
     title: defaultTitle,
     description: defaultDescription,
-    image,
+    image: defaultImage,
     siteUrl,
-    twitterUsername,
   } = useSiteMetadata();
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${siteUrl}${image}`,
+    image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname || ``}`,
   };
 
