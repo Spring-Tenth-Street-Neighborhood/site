@@ -13,7 +13,7 @@ const config: GatsbyConfig = {
   pathPrefix: `/site`,
   siteMetadata: {
     title: `Spring Tenth Neighborhood`,
-    description: `A site to organize the neighborhood against the 3335 Spring St halfway house proposal`,
+    description: `3335 Spring St halfway house and its impact on the Spring Tenth neighborhood in Redwood City, CA`,
     siteUrl: `https://spring-tenth-street-neighborhood.github.io/site/`,
     image: `/icon.png`,
   },
