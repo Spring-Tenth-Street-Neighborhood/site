@@ -10,6 +10,7 @@ import PriceEstimate646DouglasAveImage from "./PriceEstimate646DouglasAve.png";
 import PriceEstimate632DouglasAveImage from "./PriceEstimate632DouglasAve.png";
 import { Image } from "../../../lib/Image";
 import { Spring3335Links } from "../../../pageContent/Spring3335/Links";
+import { DouglasAve639Content } from "../../../pageContent/DouglasAve639/Content";
 
 const ContentByLanguage = {
   en: {
@@ -18,6 +19,8 @@ const ContentByLanguage = {
       "Review of the effect of transitional housing on nearby property values.",
     claim:
       "The claims are that transitional housing has no effect on nearby property values. Let's take a look at the data.",
+    background: "Background",
+    caseStudyTitle: "Case Study",
     caseStudy:
       "The 639 Douglas Avenue transitional housing project in Redwood City is a case study for impact in property values and crime.",
     onZillow: "On Zillow, we can see the ",
@@ -38,6 +41,8 @@ const ContentByLanguage = {
       "Revisión del efecto de la vivienda de transición en los valores de las propiedades cercanas.",
     claim:
       "Las afirmaciones son que la vivienda de transición no tiene efecto en los valores de las propiedades cercanas. Echemos un vistazo a los datos.",
+    background: "Antecedentes",
+    caseStudyTitle: "Estudio de Caso",
     caseStudy:
       "El proyecto de vivienda de transición en 639 Douglas Avenue en Redwood City es un estudio de caso sobre el impacto en los valores de las propiedades y el crimen.",
     onZillow: "En Zillow, podemos ver el ",
@@ -67,8 +72,11 @@ export default function HouseValuePage() {
             <Text>{content.description}</Text>
           </Stack>
           <Stack gap={2}>
-            <Title component="h2">639 Douglas Avenue Data</Title>
+            <Title component="h2">639 Douglas Avenue</Title>
             <Text>{content.claim}</Text>
+            <Title component="h3">{content.background}</Title>
+            <DouglasAve639Content />
+            <Title component="h3">{content.caseStudyTitle}</Title>
             <Text>{content.caseStudy}</Text>
             <Text>
               {content.onZillow}

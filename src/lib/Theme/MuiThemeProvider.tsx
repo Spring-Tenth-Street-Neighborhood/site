@@ -78,6 +78,7 @@ function getTheme(paletteMode: TPaletteMode) {
           ? DARKEST_GRAY
           : TYPOGRAPHY_HEADLINE_COLORS[paletteMode],
       },
+      divider: TYPOGRAPHY_HEADLINE_COLORS[paletteMode],
     },
     components: {
       MuiCssBaseline: {
@@ -113,14 +114,6 @@ function getTheme(paletteMode: TPaletteMode) {
         styleOverrides: {
           root: {
             fontWeight: "bold",
-          },
-        },
-      },
-      MuiDivider: {
-        styleOverrides: {
-          root: {
-            backgroundColor: TYPOGRAPHY_HEADLINE_COLORS[paletteMode],
-            borderColor: "rgba(255, 255, 255, 0)",
           },
         },
       },
