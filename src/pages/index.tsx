@@ -72,7 +72,7 @@ const IndexPage: React.FC<PageProps> = () => {
               </InternalButtonLink>
             </Text>
             <Alert severity="warning">
-              <b>ETA for item 15 - Today 3 PM</b>{" "}
+              <b>ETA for item 15 - Today 12:25 PM</b>{" "}
               <ExternalButtonLink
                 variant="contained"
                 to="https://smcgov.zoom.us/j/97944675398"
