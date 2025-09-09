@@ -10,7 +10,7 @@ import {
   Toolbar,
   Tooltip,
 } from "@mui/material";
-import { InternalLink } from "./Links";
+import { ExternalButtonLink, InternalLink } from "./Links";
 import { usePaletteModeContext } from "./Theme/paletteModeContext";
 import { DarkModeIcon } from "./Icons/DarkModeIcon";
 import { LightModeIcon } from "./Icons/LightModeIcon";
@@ -82,6 +82,12 @@ export function SiteAppBar() {
             >
               {content.houseValue}
             </InternalLink>
+            <ExternalButtonLink
+              to="https://smcgov.zoom.us/j/97944675398"
+              variant="contained"
+            >
+              Zoom
+            </ExternalButtonLink>
           </Stack>
           <Box flexGrow={1} />
           <Box display="flex" gap={0.5} alignItems="center">
