@@ -22,7 +22,7 @@ export const DARKEST_BROWN = "#1a0e05"; // Almost black brown
 
 type TPaletteMode = Theme["palette"]["mode"];
 function getTheme(_paletteMode: TPaletteMode) {
-  const paletteMode = _paletteMode;
+  const paletteMode = "light" as TPaletteMode;
   const modeIsLight = paletteMode === "light";
   const theme = createTheme({
     typography: {
