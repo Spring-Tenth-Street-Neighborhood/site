@@ -17,9 +17,9 @@ const ContentByLanguage = {
   en: {
     title: "Spring Tenth Neighborhood",
     description: "Welcome to the Spring Tenth Neighborhood in Redwood City",
-    agenda: "Top Agenda - 3335 Spring Street Halfway House Proposal",
+    agenda: "Top Agenda - 3335 Spring Street Transitional Housing Proposal",
     summary1: `The local residents of the Spring Tenth neighborhood are deeply
-          concerned about the proposed halfway house at 3335 Spring Street. We
+          concerned about the proposed transitional housing at 3335 Spring Street. We
           believe that this proposal could have significant negative impacts on
           our community, including increased traffic, noise, and safety
           concerns.`,
