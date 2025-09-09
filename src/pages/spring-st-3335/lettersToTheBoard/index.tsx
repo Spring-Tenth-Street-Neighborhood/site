@@ -19,6 +19,7 @@ const ContentByLanguage = {
     lettersFrom: "Letters from concerned residents and voters",
     weAre:
       "We are local residents and voters in Redwood City. Here are our voices.",
+    responses: "responses",
   },
   es: {
     title: "Cartas a la junta",
@@ -31,6 +32,7 @@ const ContentByLanguage = {
     lettersFrom: "Cartas de residentes y votantes preocupados",
     weAre:
       "Somos residentes y votantes locales en Redwood City. Aquí están nuestras voces.",
+    responses: "respuestas",
   },
 };
 
@@ -66,7 +68,9 @@ export default function BlogPage(props: any) {
             </li>
           </ul>
           <Title component="h2">{content.lettersFrom}</Title>
-          <Text>{content.weAre}</Text>
+          <Text>
+            {content.weAre} ({data.allMdx.nodes.length} {content.responses})
+          </Text>
           <List>
             {data.allMdx.nodes.map((node: any) => (
               <ListItem
