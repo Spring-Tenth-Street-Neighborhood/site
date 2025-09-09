@@ -1,9 +1,13 @@
 import { type PageProps } from "gatsby";
 import { Layout } from "../lib/Layout";
 import { Title } from "../lib/Typography/Title";
-import { Container, Divider, Stack } from "@mui/material";
+import { Alert, Container, Divider, Stack } from "@mui/material";
 import { Text } from "../lib/Typography/Text";
-import { InternalButtonLink, InternalLink } from "../lib/Links";
+import {
+  ExternalButtonLink,
+  InternalButtonLink,
+  InternalLink,
+} from "../lib/Links";
 import { Spring3335Links } from "../pageContent/Spring3335/Links";
 import { useLanguageContext } from "../lib/Language/context";
 import { Spring3335Card } from "../pageContent/Spring3335/Card";
@@ -67,6 +71,15 @@ const IndexPage: React.FC<PageProps> = () => {
                 {content.lettersToTheBoard}
               </InternalButtonLink>
             </Text>
+            <Alert severity="warning">
+              ETA for item 15 - Today 12 noon{" "}
+              <ExternalButtonLink
+                variant="contained"
+                to="https://smcgov.zoom.us/j/97944675398"
+              >
+                zoom
+              </ExternalButtonLink>
+            </Alert>
             <Text>{content.summary2}</Text>
             <Stack
               direction={{ xs: "column", sm: "row" }}
