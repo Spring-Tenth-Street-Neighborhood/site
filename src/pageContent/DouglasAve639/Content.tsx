@@ -14,7 +14,7 @@ const ContentByLanguage = {
   },
   es: {
     summary:
-      "639 Douglas Ave fue una instalación de vivienda de transición administrada por Star Vista durante 30 años. Alojó a más de 7 hombres y mujeres en una casa de 3 habitaciones.",
+      "639 Douglas Ave fue una instalación de vivienda de transición administrada por Star Vista durante 30 años. Alojó a más de 7+ hombres y mujeres en una casa de 3 habitaciones.",
     neighborFeedback: [
       "639 Douglas Ave., RWC – Breves comentarios sobre el hogar de transición que se ejecutó anteriormente",
       "Lo siguiente es un breve resumen anecdótico proporcionado por 3 residentes a largo plazo que viven en las cercanías del hogar de adultos en transición que anteriormente se encontraba en 639 Douglas Ave, RWC:",
