@@ -21,7 +21,8 @@ const PAPER_BROWN = "#422510ff"; // Subtle brown for paper
 export const DARKEST_BROWN = "#1a0e05"; // Almost black brown
 
 type TPaletteMode = Theme["palette"]["mode"];
-function getTheme(paletteMode: TPaletteMode) {
+function getTheme(_paletteMode: TPaletteMode) {
+  const paletteMode = "light";
   const modeIsLight = paletteMode === "light";
   const theme = createTheme({
     typography: {
