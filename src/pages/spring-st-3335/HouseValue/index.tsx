@@ -90,10 +90,6 @@ export default function HouseValuePage() {
               src={PriceEstimate639DouglasAveImage}
               alt="Price Estimate for 639 Douglas Avenue"
             />
-            <ExternalLink to="https://star-vista.org/daybreak-30/">
-              Star Vista - Daybreak
-            </ExternalLink>
-
             <Title component="h2">{content.neighbors646}</Title>
             <Text>{content.neighbors646Price}</Text>
             <Image

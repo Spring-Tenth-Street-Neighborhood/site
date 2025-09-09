@@ -1,6 +1,7 @@
 import { Box, Stack } from "@mui/material";
 import { useLanguageContext } from "../../lib/Language/context";
 import { Text } from "../../lib/Typography/Text";
+import { ExternalLink } from "../../lib/Links";
 const ContentByLanguage = {
   en: {
     summary:
@@ -30,6 +31,9 @@ export function DouglasAve639Content() {
   return (
     <Stack gap={2}>
       <Text>{content.summary}</Text>
+      <ExternalLink to="https://star-vista.org/daybreak-30/">
+        Star Vista - Daybreak
+      </ExternalLink>
       <Stack
         gap={2}
         sx={{
