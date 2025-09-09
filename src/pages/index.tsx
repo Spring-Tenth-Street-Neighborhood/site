@@ -71,15 +71,6 @@ const IndexPage: React.FC<PageProps> = () => {
                 {content.lettersToTheBoard}
               </InternalButtonLink>
             </Text>
-            <Alert severity="warning">
-              <b>ETA for item 15 - Today 12:35 PM</b>{" "}
-              <ExternalButtonLink
-                variant="contained"
-                to="https://smcgov.zoom.us/j/97944675398"
-              >
-                zoom
-              </ExternalButtonLink>
-            </Alert>
             <Text>{content.summary2}</Text>
             <Stack
               direction={{ xs: "column", sm: "row" }}
